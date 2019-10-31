@@ -1,0 +1,30 @@
+{
+  "name": "@umm/mask_color_shader",
+  "version": "1.0.0",
+  "description": "uGUI xy axis reverse shader",
+  "homepage": "https://github.com/umm/mask_color_shader",
+  "bugs": {
+    "url": "https://github.com/umm/mask_color_shader/issues"
+  },
+  "scripts": {
+    "umm:init": "umm-init",
+    "umm:generate_assembly_definition": "umm-generate_assembly_definition",
+    "umm:module:install": "umm-module-install",
+    "umm:module:uninstall": "umm-module-uninstall",
+    "postinstall": "npm run --silent umm:module:install",
+    "postuninstall": "npm run --silent umm:module:uninstall"
+  },
+  "author": "mattak",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:umm/mask_color_shader"
+  },
+  "files": [
+    "Assets"
+  ],
+  "dependencies": {
+    "@umm/scripts": "umm/scripts#^1.0.0"
+  },
+  "devDependencies": {}
+}
