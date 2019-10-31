@@ -9,7 +9,7 @@ uGUI shader for creating single color mask.
 ## Install
 
 ```shell
-yarn add "umm/mask_color_shaders#^1.0.0"
+yarn add "umm/mask_color_shader#^1.0.0"
 ```
 
 ## Examples
