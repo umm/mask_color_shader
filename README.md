@@ -2,7 +2,7 @@
 
 ## What
 
-Mask Color Shaders is uGUI Shader for modifing colors to single color.
+uGUI shader for creating single color mask.
 
 ![mask_color](./art/mask_color_small.gif)
 
