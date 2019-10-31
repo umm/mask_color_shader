@@ -1,6 +1,6 @@
 {
   "name": "@umm/mask_color_shader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "uGUI xy axis reverse shader",
   "homepage": "https://github.com/umm/mask_color_shader",
   "bugs": {
