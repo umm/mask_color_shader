@@ -6,6 +6,7 @@ Shader "UI/Mask-Color"
     {
         [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
         _Color ("Tint", Color) = (1,1,1,1)
+        _MaskAlphaThreshold ("Mask Alpha Threshold", Range(0.001, 1)) = 0.001
 
         _StencilComp ("Stencil Comparison", Float) = 8
         _Stencil ("Stencil ID", Float) = 0
@@ -81,6 +82,7 @@ Shader "UI/Mask-Color"
             fixed4 _TextureSampleAdd;
             float4 _ClipRect;
             float4 _MainTex_ST;
+            fixed _MaskAlphaThreshold;
 
             v2f vert(appdata_t v)
             {
@@ -109,7 +111,7 @@ Shader "UI/Mask-Color"
                 #endif
                 
                 // override colors
-                if (color.a > 0.001) {
+                if (color.a > _MaskAlphaThreshold) {
                   color = _Color;
                 } else {
                   color = half4(0,0,0,0);
